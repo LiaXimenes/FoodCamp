@@ -1,19 +1,33 @@
+body{background: #E5E5E5;
+}
+
 .topo{
     width:100%;
-    height: 100px;
-    background: red;
+    height: 92px;
+    background: #CF2B2B;   
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
     position: fixed;
     top: 0;
     left:0;
 }
 
-.bottom{width:100%;
-    height: 100px;
-    background: red;
+.conteudo{ height:200px;
+    margin-top: 90px;
+    background: green;
+}
+
+.pratos{height:50px;
+    background: blue;
+}
+
+.embaixo{width:100%;
+    height: 92px;
+    background:red;
     display: flex;
     position: fixed;
     bottom: 0;
     left:0;
-
 }

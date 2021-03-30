@@ -14,13 +14,23 @@ body{background: #E5E5E5;
     left:0;
 }
 
-.conteudo{ height:200px;
+.conteudo{ height:300px;
     margin-top: 90px;
     background: green;
+    
+}
+.segura-pratos{height:250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: purple;
 }
 
-.pratos{height:50px;
+.pratos{height:216px;
+    width: 172px;
     background: blue;
+    border-radious: 9px;
+
 }
 
 .embaixo{width:100%;

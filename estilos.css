@@ -12,7 +12,8 @@ body{background: #E5E5E5;
     position: fixed;
     top: 0;
     left:0;
-    box-shadow: 0px 4px 4px 0px #000000 25%;   
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  
 }
 
 .frase-de-empacto{font-size: 18px;
@@ -48,24 +49,39 @@ h2{font-size: 26px;
 .conteudo:nth-child(3){margin-bottom:92px;
 }
 
+.pratos:nth-child(3) {padding-right: 20px;
+}
+
 
 .segura-pratos{height:250px;
     display: flex;
-    overflow: hidden; 
+    overflow: scroll; 
 }
 
 .pratos{height:216px;
     width: 172px; 
-    margin-left: 20px;
+    margin-left: 18px;
     margin-top: 17px;
     border-radius: 9px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 15px;
+    padding: 10px;
     line-height: 20px;
     background: white;
     box-shadow: 0px 0px 10px -4px #000000 25%;
+}
+
+.verde{
+    border: 3px solid green;
+}
+
+ion-icon{ color: green;  
+    width: 15px;
+    height:15px;
+    margin-left:90%;
+    right:0;
+
 }
 
 .nome{ font-size: 16px;
@@ -96,13 +112,13 @@ h2{font-size: 26px;
 
 .embaixo{width:100%;
     height: 92px;
-    background:red;
     display: flex;
     position: fixed;
     bottom: 0;
     left:0;
     justify-content: center;
     align-items: center;
+    background:#FFFFFF;
 }
 
 .finalizacao{width:364px;
@@ -112,6 +128,10 @@ h2{font-size: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.finalizacao-verde{
+    background-color: green;     
 }
 
 .frase-final{font-size: 20px;

@@ -26,7 +26,7 @@
     <div class="conteudo">
       <h2>Primeiro, seu prato</h2>
       <div class="segura-pratos">
-        <button class="pratos um" onclick="escolha('um')">
+        <button class="pratos um" onclick="comida('um')">
           <img src="imagens/frango-cozido.jpg">
 
           <p class="nome">Frango Cozido</p>
@@ -39,7 +39,7 @@
           </div> 
         </button>
 
-        <button class="pratos dois" onclick="escolha('dois')">
+        <button class="pratos dois" onclick="comida('dois')">
           <img src="imagens/frango-frito.jpg">
 
           <p class="nome">Frango Frito</p>
@@ -52,7 +52,7 @@
           </div>         
         </button>
 
-        <button class="pratos tres" onclick="escolha('tres')">
+        <button class="pratos tres" onclick="comida('tres')">
           <img src="imagens/frango-cozido-e-frito.jpg">
 
           <p class="nome">Frango Cozido e Frito</p>
@@ -71,7 +71,7 @@
     <div class="conteudo">
       <h2>Agora, sua bebida</h2>
       <div class="segura-pratos">
-        <button class="pratos quatro" onclick="escolha('quatro')">
+        <button class="pratos quatro" onclick="bebida('quatro')">
           <img src="imagens/coca.jfif">
   
           <p class="nome">Coca Cola</p>
@@ -85,7 +85,7 @@
           </div>  
         </button>
 
-        <button class="pratos cinco" onclick="escolha('cinco')">
+        <button class="pratos cinco" onclick="bebida('cinco')">
           <img src="imagens/fanta.jfif">
   
           <p class="nome">Fanta</p>
@@ -98,7 +98,7 @@
           </div>
         </button>
 
-        <button class="pratos seis" onclick="escolha('seis')">
+        <button class="pratos seis" onclick="bebida('seis')">
           <img src="imagens/guarana.jpg">
   
           <p class="nome">Guaraná</p>
@@ -117,7 +117,7 @@
     <div class="conteudo">
       <h2>Por último, sua sobremesa</h2>
       <div class="segura-pratos">
-        <button class="pratos sete" onclick="escolha('sete')">
+        <button class="pratos sete" onclick="doce('sete')">
           <img src="imagens/pudim.jpg">
   
           <p class="nome">Pudim</p>
@@ -130,7 +130,7 @@
           </div>
         </button>
 
-        <button class="pratos oito" onclick="escolha('oito')">
+        <button class="pratos oito" onclick="doce('oito')">
           <img src="imagens/quindim.jpg">
   
           <p class="nome">Quindim</p>
@@ -143,7 +143,7 @@
           </div>
         </button>
 
-        <button class="pratos nove" onclick="escolha('nove')">
+        <button class="pratos nove" onclick="doce('nove')">
           <img src="imagens/nadim.png">
   
           <p class="nome">Nadim</p>
@@ -160,9 +160,9 @@
   </div>
 
   <div class="embaixo">   
-    <div class="finalizacao">
+    <button class="finalizacao" onclick="botaofinal()" disabled>
       <p class="frase-final">Selecione os 3 itens<br>para finalizar o pedido</p>  
-    </div>    
+    </button>    
   </div>
   <script src="script.js"></script>
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>

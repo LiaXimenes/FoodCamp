@@ -27,7 +27,6 @@ function bebida(numeros){
     botaofinal()
 }
 
-
 function doce(numero){
     const naoverde = document.querySelector(".doce .verde")
         if (naoverde != null){    
@@ -40,13 +39,30 @@ function doce(numero){
     botaofinal()
 }
 
-
-
 function botaofinal(){
-     if (comidaselecionada !== 0 && bebidaselecionada !== 0 && doceselecionado !==0 ){
+    if (comidaselecionada !== 0 && bebidaselecionada !== 0 && doceselecionado !==0 ){
         const botaofim = document.querySelector(".finalizacao");             
         botaofim.classList.add("finalizacao-verde");  
         document.querySelector(".finalizacao").disabled = false;
-
+        document.querySelector(".finalizacao").innerHTML = "Fechar Pedido";
     }
+}
+
+
+
+let pratofinal = document.querySelector(".comida .verde .nome").innerHTML
+let bebidafinal = document.querySelector("bebida .verde .nome").innerHTML
+let docefinal = document.querySelector(".doce .verde .nome").innerHTML
+
+
+
+
+
+function myFunction() {
+    const codificar = "Olá, gostaria de fazer um pedido:"
+    const codificado = encodeURIComponent(codificar);
+    document.querySelector("finalizacao").innerHTML = "https://wa.me/5514981320384" + codificado
+
+
+
 }

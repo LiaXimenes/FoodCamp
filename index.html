@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
  <div class="tudo">
     <div class="conteudo">
       <h2>Primeiro, seu prato</h2>
-      <div class="segura-pratos">
+      <div class="segura-pratos comida">
         <button class="pratos um" onclick="comida('um')">
           <img src="imagens/frango-cozido.jpg">
 
@@ -70,7 +72,7 @@
   
     <div class="conteudo">
       <h2>Agora, sua bebida</h2>
-      <div class="segura-pratos">
+      <div class="segura-pratos bebida">
         <button class="pratos quatro" onclick="bebida('quatro')">
           <img src="imagens/coca.jfif">
   
@@ -116,7 +118,7 @@
 
     <div class="conteudo">
       <h2>Por último, sua sobremesa</h2>
-      <div class="segura-pratos">
+      <div class="segura-pratos doce">
         <button class="pratos sete" onclick="doce('sete')">
           <img src="imagens/pudim.jpg">
   
@@ -160,11 +162,11 @@
   </div>
 
   <div class="embaixo">   
-    <button class="finalizacao" onclick="botaofinal()" disabled>
+    <button class="finalizacao" onclick=location.href='https://wa.me/5514981320384' disabled>      
       <p class="frase-final">Selecione os 3 itens<br>para finalizar o pedido</p>  
     </button>    
   </div>
+
   <script src="script.js"></script>
-  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

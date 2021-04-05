@@ -162,6 +162,30 @@ ion-icon{ color: green;
     border-radius: 9px;
     background-color: #50D074;
     color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: calc((100% - 377px)/2);
+    left: calc((100% - 377px)/2);
+}
+
+.escondido{
+    display: none;
+}
+
+.confirmacao-bonus{ width:329px;
+    height:52px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color: #50D074;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cancelar-confirmacao-bonus{width:329px;
+    height:40px;
+    background-color: #50D074;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
 }

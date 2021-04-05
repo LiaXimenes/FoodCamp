@@ -2,6 +2,16 @@ let comidaselecionada = 0
 let bebidaselecionada = 0
 let doceselecionado = 0
 
+let pratofinal 
+let bebidafinal 
+let docefinal 
+let precofinalprato 
+let precofinalbebida
+let precofinaldoce
+let precototal 
+let codificar
+let codificado
+
 
 function comida(numero){
     const naoverde = document.querySelector(".comida .verde")
@@ -49,20 +59,28 @@ function botaofinal(){
 }
 
 
+function confirmarpedido(){
+    pratofinal = document.querySelector(".comida .verde .nome").innerHTML;
+    bebidafinal = document.querySelector(".bebida .verde .nome").innerHTML;
+    docefinal = document.querySelector(".doce .verde .nome").innerHTML;
+    precofinalprato = (document.querySelector(".comida .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precofinalbebida = (document.querySelector(".bebida .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precofinaldoce = (document.querySelector(".doce .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precototal = parseFloat(precofinalprato) + parseFloat(precofinalbebida) + parseFloat(precofinaldoce);
 
-let pratofinal = document.querySelector(".comida .verde .nome").innerHTML
-let bebidafinal = document.querySelector("bebida .verde .nome").innerHTML
-let docefinal = document.querySelector(".doce .verde .nome").innerHTML
+    const vossagraca = prompt ("Qual seu nome?");
+    const endereco = prompt ("Qual seu endereço?");
+    
 
-
-
-
-
-function myFunction() {
-    const codificar = "Olá, gostaria de fazer um pedido:"
-    const codificado = encodeURIComponent(codificar);
-    document.querySelector("finalizacao").innerHTML = "https://wa.me/5514981320384" + codificado
-
-
+    codificar = `Olá, gostaria de fazer um pedido
+    -Prato: ${pratofinal}
+    -Bebida: ${bebidafinal}
+    -Sobremesa: ${docefinal}
+    -Nome: ${vossagraca}
+    -Endereço: ${endereco}
+     TOTAL: R$ ${precototal.toFixed(2).replace('.',',')}`;
+   codificado = encodeURIComponent(codificar);
+   const link = `https://wa.me/5514981320384?text=${codificado}`;
+   window.location.href = link;
 
 }

@@ -60,14 +60,6 @@ function botaofinal(){
 
 
 function confirmarpedido(){
-    pratofinal = document.querySelector(".comida .verde .nome").innerHTML;
-    bebidafinal = document.querySelector(".bebida .verde .nome").innerHTML;
-    docefinal = document.querySelector(".doce .verde .nome").innerHTML;
-    precofinalprato = (document.querySelector(".comida .verde .preco").innerHTML).replace("R$","").replace(",",".");
-    precofinalbebida = (document.querySelector(".bebida .verde .preco").innerHTML).replace("R$","").replace(",",".");
-    precofinaldoce = (document.querySelector(".doce .verde .preco").innerHTML).replace("R$","").replace(",",".");
-    precototal = parseFloat(precofinalprato) + parseFloat(precofinalbebida) + parseFloat(precofinaldoce);
-
     const vossagraca = prompt ("Qual seu nome?");
     const endereco = prompt ("Qual seu endereço?");
     
@@ -82,5 +74,39 @@ function confirmarpedido(){
    codificado = encodeURIComponent(codificar);
    const link = `https://wa.me/5514981320384?text=${codificado}`;
    window.location.href = link;
+}
+
+function confirmarbonus(){
+    const camuflado = document.querySelector(".quadro-de-confirmacao-bonus");
+    camuflado.classList.remove("escondido"); 
+
+    pratofinal = document.querySelector(".comida .verde .nome").innerHTML;
+    bebidafinal = document.querySelector(".bebida .verde .nome").innerHTML;
+    docefinal = document.querySelector(".doce .verde .nome").innerHTML;
+    precofinalprato = (document.querySelector(".comida .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precofinalbebida = (document.querySelector(".bebida .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precofinaldoce = (document.querySelector(".doce .verde .preco").innerHTML).replace("R$","").replace(",",".");
+    precototal = parseFloat(precofinalprato) + parseFloat(precofinalbebida) + parseFloat(precofinaldoce);
+
+    
+    const comidabonus = document.querySelector(".quadro-de-confirmacao-bonus .pratoescolhidobonus");
+    comidabonus.innerHTML = pratofinal;
+    const precocomidabonus = document.querySelector(".quadro-de-confirmacao-bonus .pratoprecobonus");
+    precocomidabonus.innerHTML = "R$" + precofinalprato;
+    const bebidabonus = document.querySelector(".quadro-de-confirmacao-bonus .bebidaescolhidabonus");
+    bebidabonus.innerHTML = bebidafinal;
+    const precobebidabonus = document.querySelector(".quadro-de-confirmacao-bonus .bebidaprecobonus");
+    precobebidabonus.innerHTML = "R$" + precofinalbebida;
+    const docebonus = document.querySelector(".quadro-de-confirmacao-bonus .doceescolhidobonus");
+    docebonus.innerHTML = docefinal;
+    const precodocebonus = document.querySelector(".quadro-de-confirmacao-bonus .doceprecobonus");
+    precodocebonus.innerHTML = "R$" + precofinaldoce;
+    const precofinalbonus = document.querySelector(".quadro-de-confirmacao-bonus .precototalbonus");
+    precofinalbonus.innerHTML = "R$" + precototal;
+}
+
+function cancelar(){
+    const camuflado = document.querySelector(".quadro-de-confirmacao-bonus");
+    camuflado.classList.add("escondido"); 
 
 }

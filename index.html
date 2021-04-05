@@ -162,22 +162,34 @@
   </div>
 
   <div class="embaixo">   
-    <button class="finalizacao" onclick="confirmarpedido()" disabled>      
+    <button class="finalizacao" onclick="confirmarbonus()" disabled>      
       <p>Selecione os 3 itens<br>para finalizar o pedido</p>  
     </button>    
   </div>
 
   <div class="quadro-de-confirmacao-bonus escondido">
     <p><strong>Confirmar seu pedido</strong></p>
-    <div> Prato escolhido         preço </div>
-    <div> Bebida escolhida         preço </div>
-    <div> Doce escolhido            preço </div>
-    <div><strong>TOTAL      preço</strong></div>
+    <div class="comidabonus"> 
+      <span class="pratoescolhidobonus">Prato escolhido</span>        
+      <span class="pratoprecobonus">preço</span> 
+    </div>
+    <div class="bebidabonus"> 
+      <span class="bebidaescolhidabonus">Bebida escolhida</span>        
+      <span class="bebidaprecobonus">preço</span> 
+    </div>
+    <div class="docebonus"> 
+      <span class="doceescolhidobonus">Doce escolhido</span>         
+      <span class="doceprecobonus">preço</span>  
+    </div>
+    <div class="totalbonus">
+      <strong>
+        <span>TOTAL</span>     
+        <span class="precototalbonus">preço</span> 
+      </strong>
+    </div>
     
-    <button class="confirmacao-bonus">Tudo certo, pode pedir!</button>
-    <button class="cancelar-confirmacao-bonus">Cancelar</button>
-
-
+    <button class="confirmacao-bonus" onclick="confirmarpedido()">Tudo certo, pode pedir!</button>
+    <button class="cancelar-confirmacao-bonus" onclick="cancelar()">Cancelar</button>
   </div>
 
   <script src="script.js"></script>

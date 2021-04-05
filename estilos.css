@@ -166,6 +166,7 @@ ion-icon{ color: green;
     display:flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;    
     position: fixed;
     top: calc((100% - 377px)/2);
     left: calc((100% - 377px)/2);

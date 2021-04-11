@@ -14,9 +14,9 @@ let codificado
 
 
 function comida(numero){
-    const naoverde = document.querySelector(".comida .verde")
-        if (naoverde != null){    
-           naoverde.classList.remove("verde");
+    const tirarverde = document.querySelector(".comida .verde")
+        if (tirarverde != null){    
+           tirarverde.classList.remove("verde");
         }
     const selecionado = "." + numero;
     const comida = document.querySelector(selecionado);
@@ -26,9 +26,9 @@ function comida(numero){
 }
 
 function bebida(numeros){
-    const naoverde = document.querySelector(".bebida .verde")
-        if (naoverde != null){    
-           naoverde.classList.remove("verde");
+    const tirarverde = document.querySelector(".bebida .verde")
+        if (tirarverde != null){    
+           tirarverde.classList.remove("verde");
         }
     const selecionado = "." + numeros;
     const bebida = document.querySelector(selecionado);
@@ -38,9 +38,9 @@ function bebida(numeros){
 }
 
 function doce(numero){
-    const naoverde = document.querySelector(".doce .verde")
-        if (naoverde != null){    
-           naoverde.classList.remove("verde");
+    const tirarverde = document.querySelector(".doce .verde")
+        if (tirarverde != null){    
+           tirarverde.classList.remove("verde");
         }
     const selecionado = "." + numero;
     const doce = document.querySelector(selecionado);
@@ -60,7 +60,7 @@ function botaofinal(){
 
 
 function confirmarpedido(){
-    const vossagraca = prompt ("Qual seu nome?");
+    const nomedocomprador = prompt ("Qual seu nome?");
     const endereco = prompt ("Qual seu endereço?");
     
 
@@ -68,7 +68,7 @@ function confirmarpedido(){
     -Prato: ${pratofinal}
     -Bebida: ${bebidafinal}
     -Sobremesa: ${docefinal}
-    -Nome: ${vossagraca}
+    -Nome: ${nomedocomprador}
     -Endereço: ${endereco}
      TOTAL: R$ ${precototal.toFixed(2).replace('.',',')}`;
    codificado = encodeURIComponent(codificar);
